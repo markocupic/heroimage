@@ -1,0 +1,18 @@
+<div class="<?= $this->class ?> block"<?= $this->cssID ?>style="background-image: url('<?= $this->singleSRC ?>');<?php if ($this->style): ?> <?= $this->style ?><?php endif; ?>">
+
+    <?php if ($this->headline): ?>
+    <div class="heroimage-headline-box">
+        <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+    </div>
+    <?php endif; ?>
+
+    <div class="heroimage-text-box">
+        <?= $this->text ?>
+    </div>
+
+    <?php if($this->buttonClass): ?>
+    <div class="heroimage-button-box">
+    <a href="<?= $this->buttonJumpTo ?>" role="button" tabindex="0" aria-pressed="false" class="btn<?php if($this->buttonClass): ?> <?= $this->buttonClass ?><?php endif; ?>"><?= $this->buttonText ?></a>
+    </div>
+    <?php endif; ?>
+</div>

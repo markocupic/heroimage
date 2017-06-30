@@ -1,0 +1,44 @@
+.ce_heroimage {
+    margin:0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 10%;
+
+}
+
+.ce_heroimage .heroimage-headline-box > * {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    color: #fff;
+    text-align: left;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 2rem !important;
+}
+
+.ce_heroimage .heroimage-text-box > p {
+    font-size: 1.25rem !important;
+    color: #fff;
+    text-align: left;
+    line-height: 3rem !important;
+}
+
+.ce_heroimage .heroimage-button-box {
+
+    margin-top: 3rem;
+    text-align: left;
+
+}
+
+.ce_heroimage .heroimage-button-box .btn {
+    background-color: transparent !important;
+    border: 2px solid #eee;
+    color: #eee;
+}
+.ce_heroimage .heroimage-button-box .btn:hover{
+    background-color: red !important;
+    border: 2px solid red;
+}
