@@ -58,8 +58,9 @@ class ContentHeroimage extends \ContentElement
         {
             $this->text = \StringUtil::toHtml5($this->text);
         }
+
         $this->Template->singleSRC = null;
-        if(\Validator::isUuid($this->singleSRC))
+        if($this->addHeroImage && \Validator::isUuid($this->singleSRC))
         {
             $objFile = \FilesModel::findByUuid($this->singleSRC);
             if($objFile !== null ){
