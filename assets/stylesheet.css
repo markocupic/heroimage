@@ -1,10 +1,10 @@
 .ce_heroimage {
-    margin-top:0 !important;
+    margin-top:0;
     width: 100%;
     max-width: 100%;
     min-height: 100px;
     background-position: center center;
-    background-color: #686868;
+    background-color: #414652;
     background-size: cover;
     padding: 5rem 10%;
 
