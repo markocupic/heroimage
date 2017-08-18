@@ -1,45 +1,72 @@
 .ce_heroimage {
-    margin-top:0;
-    width: 100%;
-    max-width: 100%;
-    min-height: 100px;
-    background-position: center center;
-    background-color: #292b2c;
-    background-size: cover;
-    padding: 5rem 10%;
+	margin-top: 0;
+	width: 100%;
+	max-width: 100%;
+	min-height: 100px;
+	background-color: #292b2c;
+}
 
+.ce_heroimage .heroimage-image-box {
+	position: relative;
+}
+
+.ce_heroimage .heroimage-image-box {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.ce_heroimage .heroimage-image-box img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.ce_heroimage .heroimage-content-box {
+	width: 100%;
+	padding: 2vw 10vw;
+}
+
+/** Large devices (desktops, 1100px and up) **/
+@media (min-width: 1100px) {
+	.ce_heroimage .heroimage-content-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 
 .ce_heroimage .heroimage-headline-box > * {
-    font-size: 3.5rem;
-    line-height: 5rem;
-    color: #fff;
-    text-align: left;
-    font-weight: bolder;
-    text-transform: uppercase;
-    margin-bottom: 2rem !important;
+	font-size: calc((112.5% + 0.5vw) * 2);
+	line-height: calc((112.5% + 0.5vw) * 1.75);
+	color: #fff;
+	text-align: left;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 1vw !important;
 }
 
 .ce_heroimage .heroimage-text-box > p {
-    font-size: 1.25rem !important;
-    color: #fff;
-    text-align: left;
-    line-height: 3rem !important;
+	font-size: calc(105.5% + 0.5vw) !important;
+	color: #fff;
+	text-align: left;
+	line-height: calc((112.5% + 0.5vw) * 1.5) !important;
 }
 
 .ce_heroimage .heroimage-button-box {
 
-    margin-top: 3rem;
-    text-align: left;
-
+	margin: 1rem 0;
+	text-align: left;
 }
 
 .ce_heroimage .heroimage-button-box .btn {
-    background-color: transparent !important;
-    border: 2px solid #eee;
-    color: #eee;
+	background-color: transparent !important;
+	border: 2px solid #eee;
+	color: #eee;
 }
-.ce_heroimage .heroimage-button-box .btn:hover{
-    background-color: #ce0000 !important;
-    border: 2px solid #ce0000;
+
+.ce_heroimage .heroimage-button-box .btn:hover {
+	background-color: #ce0000 !important;
+	border: 2px solid #ce0000;
 }

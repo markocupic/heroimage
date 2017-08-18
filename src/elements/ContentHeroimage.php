@@ -34,11 +34,34 @@ class ContentHeroimage extends \ContentElement
 
         if ($this->buttonJumpTo === '')
         {
-            return '';
+            //return '';
         }
 
-        return parent::generate();
+		if ($this->singleSRC == '')
+		{
+			return '';
+		}
 
+		$objFile = \FilesModel::findByUuid($this->singleSRC);
+
+		if ($objFile === null)
+		{
+			if (!\Validator::isUuid($this->singleSRC))
+			{
+				return '<p class="error">'.$GLOBALS['TL_LANG']['ERR']['version2format'].'</p>';
+			}
+
+			return '';
+		}
+
+		if (!is_file(TL_ROOT . '/' . $objFile->path))
+		{
+			return '';
+		}
+
+		$this->singleSRC = $objFile->path;
+
+		return parent::generate();
     }
 
 
@@ -59,20 +82,11 @@ class ContentHeroimage extends \ContentElement
             $this->text = \StringUtil::toHtml5($this->text);
         }
 
-        $this->Template->singleSRC = null;
-        if($this->addHeroImage && \Validator::isUuid($this->singleSRC))
-        {
-            $objFile = \FilesModel::findByUuid($this->singleSRC);
-            if($objFile !== null ){
-                if(is_file(TL_ROOT . '/' . $objFile->path))
-                {
-                    $this->Template->singleSRC =  $objFile->path;
-                }
-            }
-        }
+		$this->addImageToTemplate($this->Template, $this->arrData, null, null, $this->objFilesModel);
 
 
-        $this->Template->text = \StringUtil::encodeEmail($this->text);
+
+		$this->Template->text = \StringUtil::encodeEmail($this->text);
         $this->Template->buttonJumpTo = $this->buttonJumpTo;
 
     }

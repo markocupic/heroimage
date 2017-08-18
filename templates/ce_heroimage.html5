@@ -1,9 +1,12 @@
-<div class="<?= $this->class ?> block"<?= $this->cssID ?>style="background-image: url('<?= $this->singleSRC ?>');<?php if ($this->style): ?> <?= $this->style ?><?php endif; ?>">
-
+<div class="<?= $this->class ?> block"<?= $this->cssID ?>>
+  <div class="heroimage-image-box">
+    <?php $this->insert('picture_default', $this->picture); ?>
+  </div>
+  <div class="heroimage-content-box">
     <?php if ($this->headline): ?>
-    <div class="heroimage-headline-box">
-        <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
-    </div>
+        <div class="heroimage-headline-box">
+            <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+        </div>
     <?php endif; ?>
 
     <div class="heroimage-text-box">
@@ -11,8 +14,14 @@
     </div>
 
     <?php if($this->buttonClass): ?>
-    <div class="heroimage-button-box">
-    <a href="<?= $this->buttonJumpTo ?>" role="button" tabindex="0" aria-pressed="false" class="btn<?php if($this->buttonClass): ?> <?= $this->buttonClass ?><?php endif; ?>"><?= $this->buttonText ?></a>
-    </div>
+      <div class="heroimage-button-box">
+        <a href="<?= $this->buttonJumpTo ?>" role="button" tabindex="0" aria-pressed="false" class="btn<?php if($this->buttonClass): ?> <?= $this->buttonClass ?><?php endif; ?>"><?= $this->buttonText ?></a>
+      </div>
     <?php endif; ?>
+  </div>
 </div>
+
+
+
+
+

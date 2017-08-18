@@ -12,7 +12,7 @@
 
 
 $GLOBALS['TL_DCA']['tl_content']['palettes']['heroimage'] = 'name,type,headline;{hero_image_legend:hide},addHeroImage;{template_legend:hide},customTpl;{text_legend},text;{button_legend},buttonText,buttonClass,buttonJumpTo;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';
-$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addHeroImage'] = 'singleSRC';
+$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addHeroImage'] = 'singleSRC,size';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'addHeroImage';
 
 
@@ -56,6 +56,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['buttonJumpTo'] = array(
     ),
     'sql' => "varchar(255) NOT NULL default ''"
 );
+
 
 
 
