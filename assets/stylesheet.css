@@ -40,6 +40,6 @@
     color: #eee;
 }
 .ce_heroimage .heroimage-button-box .btn:hover{
-    background-color: red !important;
-    border: 2px solid red;
+    background-color: #ce0000 !important;
+    border: 2px solid #ce0000;
 }
