@@ -35,7 +35,7 @@
 		left: 0;
 	}
 	/** Do not apply position:absolute; in the backend **/
-	.tl_content_right .ce_heroimage .heroimage-content-box {
+	.tl_listing_container .ce_heroimage .heroimage-content-box {
 		position: inherit;
 	}
 }
