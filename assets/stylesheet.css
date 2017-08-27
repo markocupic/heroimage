@@ -8,6 +8,8 @@
 
 .ce_heroimage .heroimage-image-box {
 	position: relative;
+	/** Do not show the background image on small devices **/
+	display:none;
 }
 
 .ce_heroimage .heroimage-image-box {
@@ -29,6 +31,10 @@
 
 /** Large devices (desktops, 1100px and up) **/
 @media (min-width: 1100px) {
+	.ce_heroimage .heroimage-image-box {
+		/** Show the background image on large devices **/
+		display:block;
+	}
 	.ce_heroimage .heroimage-content-box {
 		position: absolute;
 		top: 0;
