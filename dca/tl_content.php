@@ -11,7 +11,7 @@
  */
 
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['heroimage'] = 'name,type,headline;{hero_image_legend:hide},addHeroImage;{template_legend:hide},customTpl;{text_legend},text;{button_legend},buttonText,buttonClass,buttonJumpTo;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['heroimage'] = 'name,type,headline;{hero_image_legend:hide},addHeroImage;{template_legend:hide},customTpl;{text_legend},text;{hero_image_button_legend},heroImageButtonText,heroImageButtonClass,heroImageButtonJumpTo;{hero_image_background_legend:hide],heroImageBackgroundColor;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['addHeroImage'] = 'singleSRC,size';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'addHeroImage';
 
@@ -26,8 +26,9 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['addHeroImage'] = array(
     'eval'                    => array('submitOnChange'=>true),
     'sql'                     => "char(1) NOT NULL default ''"
 );
-$GLOBALS['TL_DCA']['tl_content']['fields']['buttonClass'] = array(
-    'label' => &$GLOBALS['TL_LANG']['tl_content']['buttonClass'],
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['heroImageButtonClass'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_content']['heroImageButtonClass'],
     'exclude' => true,
     'search' => true,
     'inputType' => 'text',
@@ -35,8 +36,8 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['buttonClass'] = array(
     'sql' => "varchar(255) NOT NULL default ''"
 );
 
-$GLOBALS['TL_DCA']['tl_content']['fields']['buttonText'] = array(
-    'label' => &$GLOBALS['TL_LANG']['tl_content']['buttonText'],
+$GLOBALS['TL_DCA']['tl_content']['fields']['heroImageButtonText'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_content']['heroImageButtonText'],
     'exclude' => true,
     'search' => true,
     'inputType' => 'text',
@@ -44,8 +45,8 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['buttonText'] = array(
     'sql' => "varchar(255) NOT NULL default ''"
 );
 
-$GLOBALS['TL_DCA']['tl_content']['fields']['buttonJumpTo'] = array(
-    'label' => &$GLOBALS['TL_LANG']['tl_content']['buttonJumpTo'],
+$GLOBALS['TL_DCA']['tl_content']['fields']['heroImageButtonJumpTo'] = array(
+    'label' => &$GLOBALS['TL_LANG']['tl_content']['heroImageButtonJumpTo'],
     'exclude' => true,
     'search' => true,
     'inputType' => 'text',
@@ -56,6 +57,16 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['buttonJumpTo'] = array(
     ),
     'sql' => "varchar(255) NOT NULL default ''"
 );
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['heroImageBackgroundColor'] = array(
+	'label' => &$GLOBALS['TL_LANG']['tl_content']['heroImageBackgroundColor'],
+	'exclude' => true,
+	'search' => true,
+	'inputType' => 'text',
+	'eval' => array('maxlength'=>6, 'colorpicker'=>true, 'isHexColor'=>true, 'decodeEntities'=>true, 'tl_class'=>'w50 wizard'),
+	'sql' => "varchar(255) NOT NULL default ''"
+);
+
 
 
 
