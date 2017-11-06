@@ -1,82 +1,194 @@
 .ce_heroimage {
-	margin-top: 0;
-	width: 100%;
-	max-width: 100%;
-	min-height: 100px;
-	background-color: #292b2c;
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    background-color: #292b2c;
 }
 
 .ce_heroimage .heroimage-image-box {
-	position: relative;
-	/** Do not show the background image on small devices **/
-	display:none;
+    position: relative;
+    /** Do not show the background image on small devices **/
+    display: none;
 }
 
 .ce_heroimage .heroimage-image-box {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .ce_heroimage .heroimage-image-box img {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .ce_heroimage .heroimage-content-box {
-	width: 100%;
-	padding: 2vw 10vw;
+    width: 100%;
+    padding: 2vw 10vw;
 }
 
 /** Large devices (desktops, 1100px and up) **/
 @media (min-width: 1100px) {
-	.ce_heroimage .heroimage-image-box {
-		/** Show the background image on large devices **/
-		display:block;
-	}
-	.ce_heroimage .heroimage-content-box {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-	/** Do not apply position:absolute; in the backend **/
-	.tl_listing_container .ce_heroimage .heroimage-content-box {
-		position: inherit;
-	}
-}
+    .ce_heroimage .heroimage-image-box {
+        /** Show the background image on large devices **/
+        display: block;
+    }
 
+    .ce_heroimage .heroimage-content-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /** Do not apply position:absolute; in the backend **/
+    .tl_listing_container .ce_heroimage .heroimage-content-box {
+        position: inherit;
+    }
+}
 .ce_heroimage .heroimage-headline-box > * {
-	font-size: calc((112.5% + 0.5vw) * 2);
-	line-height: calc((112.5% + 0.5vw) * 1.75);
-	color: #fff;
-	text-align: left;
-	font-weight: bolder;
-	text-transform: uppercase;
-	margin-top: 0;
-	margin-bottom: 1vw !important;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fff;
+    text-align: left;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1vw !important;
 }
 
 .ce_heroimage .heroimage-text-box > p {
-	font-size: calc(105.5% + 0.5vw) !important;
-	color: #fff;
-	text-align: left;
-	line-height: calc((112.5% + 0.5vw) * 1.5) !important;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    text-align: left;
 }
 
-.ce_heroimage .heroimage-button-box {
+@media (min-width: 500px) {
+    .ce_heroimage .heroimage-headline-box > * {
+        font-size: 1.695rem;
+        line-height: 3.5925rem;
+    }
 
-	margin: 1rem 0;
-	text-align: left;
+    .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+        font-size: 1rem;
+        line-height: 2.2rem;
+    }
+}
+@media (min-width: 600px) {
+    .ce_heroimage .heroimage-headline-box > * {
+        font-size: 1.695rem;
+        line-height: 3.5925rem;
+    }
+
+    .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+        font-size: 1rem;
+        line-height: 2.2rem;
+    }
+}
+@media (min-width: 700px) {
+    .ce_heroimage .heroimage-headline-box > * {
+        font-size: 1.695rem;
+        line-height: 3.5925rem;
+    }
+
+    .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+        font-size: 1rem;
+        line-height: 2.2rem;
+    }
+}
+.ce_heroimage .heroimage-button-box {
+    margin: 1rem 0;
+    text-align: left;
 }
 
 .ce_heroimage .heroimage-button-box .btn {
-	background-color: transparent !important;
-	border: 2px solid #eee;
-	color: #eee;
+    background-color: transparent !important;
+    border: 2px solid #eee;
+    color: #eee;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .ce_heroimage .heroimage-button-box .btn:hover {
-	background-color: #ce0000 !important;
-	border: 2px solid #ce0000;
+    background-color: #ce0000 !important;
+    border: 2px solid #ce0000;
+}
+
+.ce_heroimage .heroimage-headline-box > * {
+    font-size: 1.6rem;
+    line-height: 3.1rem;
+}
+
+.ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+    font-size: 1.25rem !important;
+    line-height: 2.6rem !important;
+}
+
+@media (min-width: 500px) {
+    .ce_heroimage .heroimage-headline-box > * {
+        font-size: 1.82rem !important;
+        line-height: 3.419rem !important;
+    }
+
+    .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+        font-size: 1.47rem !important;
+        line-height: 2.919rem !important;
+    }
+}
+@media (min-width: 600px) {
+    .ce_heroimage .heroimage-headline-box > * {
+        font-size: 2.04rem !important;
+        line-height: 3.738rem !important;
+    }
+
+    .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+        font-size: 1.69rem !important;
+        line-height: 3.238rem !important;
+    }
+}
+@media (min-width: 800px) {
+    .ce_heroimage .heroimage-headline-box > * {
+        font-size: 2.26rem !important;
+        line-height: 4.057rem !important;
+    }
+
+    .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+        font-size: 1.91rem !important;
+        line-height: 3.557rem !important;
+    }
+}
+@media (min-width: 1000px) {
+    .ce_heroimage .heroimage-headline-box > * {
+        font-size: 2.48rem !important;
+        line-height: 4.376rem !important;
+    }
+
+    .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+        font-size: 2.13rem !important;
+        line-height: 3.876rem !important;
+    }
+}
+@media (min-width: 1200px) {
+    .ce_heroimage .heroimage-headline-box > * {
+        font-size: 2.7rem !important;
+        line-height: 4.695rem !important;
+    }
+
+    .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+        font-size: 2.35rem !important;
+        line-height: 4.195rem !important;
+    }
+}
+@media (min-width: 1400px) {
+    .ce_heroimage .heroimage-headline-box > * {
+        font-size: 2.92rem !important;
+        line-height: 5.014rem !important;
+    }
+
+    .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
+        font-size: 2.57rem !important;
+        line-height: 4.514rem !important;
+    }
 }
