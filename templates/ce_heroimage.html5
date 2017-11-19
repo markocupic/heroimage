@@ -12,7 +12,7 @@
     <div class="heroimage-text-box">
         <?= $this->text ?>
     </div>
-
+    {{br}}{{br}}
     <?php if($this->buttonClass): ?>
       <div class="heroimage-button-box">
         <a href="<?= $this->buttonJumpTo ?>" role="button" tabindex="0" aria-pressed="false" class="btn<?php if($this->buttonClass): ?> <?= $this->buttonClass ?><?php endif; ?>"><?= $this->buttonText ?></a>

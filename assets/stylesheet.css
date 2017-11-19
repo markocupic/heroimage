@@ -48,7 +48,7 @@
     }
 }
 .ce_heroimage .heroimage-headline-box > * {
-    font-size: 2rem;
+    font-size: 2.25rem;
     line-height: 3rem;
     color: #fff;
     text-align: left;
@@ -56,13 +56,14 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 1vw !important;
+    text-align: center;
 }
 
 .ce_heroimage .heroimage-text-box > p {
     font-size: 12px;
     line-height: 18px;
     color: #fff;
-    text-align: left;
+    text-align: center;
 }
 
 @media (min-width: 500px) {
@@ -100,24 +101,25 @@
 }
 .ce_heroimage .heroimage-button-box {
     margin: 1rem 0;
-    text-align: left;
+    text-align: center;
 }
 
 .ce_heroimage .heroimage-button-box .btn {
     background-color: transparent !important;
-    border: 2px solid #eee;
-    color: #eee;
+    border: 2px solid #eee !important;
+    color: #eee !important;
     padding-bottom: 0;
     padding-top: 0;
 }
 
 .ce_heroimage .heroimage-button-box .btn:hover {
-    background-color: #ce0000 !important;
-    border: 2px solid #ce0000;
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
+    color: #000 !important;
 }
 
 .ce_heroimage .heroimage-headline-box > * {
-    font-size: 1.6rem;
+    font-size: 1.85rem;
     line-height: 3.1rem;
 }
 
@@ -128,67 +130,68 @@
 
 @media (min-width: 500px) {
     .ce_heroimage .heroimage-headline-box > * {
-        font-size: 1.82rem !important;
-        line-height: 3.419rem !important;
+        font-size: 1.97rem !important;
+        line-height: 3.274rem !important;
     }
 
     .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
-        font-size: 1.47rem !important;
-        line-height: 2.919rem !important;
+        font-size: 1.37rem !important;
+        line-height: 2.774rem !important;
     }
 }
 @media (min-width: 600px) {
     .ce_heroimage .heroimage-headline-box > * {
-        font-size: 2.04rem !important;
-        line-height: 3.738rem !important;
+        font-size: 2.09rem !important;
+        line-height: 3.448rem !important;
     }
 
     .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
-        font-size: 1.69rem !important;
-        line-height: 3.238rem !important;
+        font-size: 1.49rem !important;
+        line-height: 2.948rem !important;
     }
 }
 @media (min-width: 800px) {
     .ce_heroimage .heroimage-headline-box > * {
-        font-size: 2.26rem !important;
-        line-height: 4.057rem !important;
+        font-size: 2.21rem !important;
+        line-height: 3.622rem !important;
     }
 
     .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
-        font-size: 1.91rem !important;
-        line-height: 3.557rem !important;
+        font-size: 1.61rem !important;
+        line-height: 3.122rem !important;
     }
 }
 @media (min-width: 1000px) {
     .ce_heroimage .heroimage-headline-box > * {
-        font-size: 2.48rem !important;
-        line-height: 4.376rem !important;
+        font-size: 2.33rem !important;
+        line-height: 3.796rem !important;
     }
 
     .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
-        font-size: 2.13rem !important;
-        line-height: 3.876rem !important;
+        font-size: 1.73rem !important;
+        line-height: 3.296rem !important;
     }
 }
 @media (min-width: 1200px) {
     .ce_heroimage .heroimage-headline-box > * {
-        font-size: 2.7rem !important;
-        line-height: 4.695rem !important;
+        font-size: 2.45rem !important;
+        line-height: 3.97rem !important;
     }
 
     .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
-        font-size: 2.35rem !important;
-        line-height: 4.195rem !important;
+        font-size: 1.85rem !important;
+        line-height: 3.47rem !important;
     }
 }
 @media (min-width: 1400px) {
     .ce_heroimage .heroimage-headline-box > * {
-        font-size: 2.92rem !important;
-        line-height: 5.014rem !important;
+        font-size: 2.57rem !important;
+        line-height: 4.144rem !important;
     }
 
     .ce_heroimage .heroimage-text-box > p, .ce_heroimage .heroimage-button-box .btn {
-        font-size: 2.57rem !important;
-        line-height: 4.514rem !important;
+        font-size: 1.97rem !important;
+        line-height: 3.644rem !important;
     }
 }
+
