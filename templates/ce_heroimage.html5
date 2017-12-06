@@ -1,7 +1,4 @@
-<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if($this->heroImageBackgroundColor): ?> style="background-color:#<?= $this->heroImageBackgroundColor ?>"<?php endif; ?>>
-  <div class="heroimage-image-box">
-    <?php $this->insert('picture_default', $this->picture); ?>
-  </div>
+<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if($this->heroImageBackgroundColor): ?> style="background-image:<?= $this->backgroundImage ?>; background-color:#<?= $this->heroImageBackgroundColor ?>"<?php endif; ?>>
   <div class="heroimage-content-box">
     <?php if ($this->headline): ?>
         <div class="heroimage-headline-box">

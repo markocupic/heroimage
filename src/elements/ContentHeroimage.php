@@ -84,6 +84,13 @@ class ContentHeroimage extends \ContentElement
 
 		$this->addImageToTemplate($this->Template, $this->arrData, null, null, $this->objFilesModel);
 
+        // Add image as background-image
+        $this->Template->backgroundImage = 'none';
+        if($this->addHeroImage)
+        {
+            $this->Template->backgroundImage =  "url('" . $this->Template->picture['img']['src'] . "')";
+        }
+
 
 
 		$this->Template->text = \StringUtil::encodeEmail($this->text);
