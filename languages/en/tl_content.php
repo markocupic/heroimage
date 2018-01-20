@@ -16,4 +16,5 @@ $GLOBALS['TL_LANG']['tl_content']['heroImageButtonClass'] = array('Button CSS-Kl
 $GLOBALS['TL_LANG']['tl_content']['heroImageButtonText'] = array('Button Beschriftung', '');
 $GLOBALS['TL_LANG']['tl_content']['heroImageButtonJumpTo'] = array('Button Weiterleitung', 'Geben Sie eine interne Seite an.');
 $GLOBALS['TL_LANG']['tl_content']['heroImageBackgroundColor'] = array('Hintergrundfarbe', 'Geben Sie eine Hintergrundfarbe ein.');
+$GLOBALS['TL_LANG']['tl_content']['heroImageTextClass'] = array('CSS-Textklasse', 'W&auml;hlen Sie eine CSS-Textklasse aus.');
 

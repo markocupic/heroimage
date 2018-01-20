@@ -1,12 +1,23 @@
-.ce_heroimage {
-    margin-top: 0;
+.ce_heroimage .heroimage-wrapper {
+    margin: 0;
+    padding: 0;
     width: 100%;
     max-width: 100%;
     min-height: 100px;
     background-color: #292b2c;
     background-repeat: no-repeat, no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
+    display: flex !important;
+    align-items: stretch;
+}
+
+.ce_heroimage .heroimage-background-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
 }
 
 .ce_heroimage .heroimage-content-box {
@@ -50,6 +61,7 @@
         line-height: 2.4rem;
     }
 }
+
 @media (min-width: 90em) {
     .ce_heroimage .heroimage-headline-box > * {
         font-size: 4.2rem;
@@ -61,6 +73,7 @@
         line-height: 2.8rem;
     }
 }
+
 @media (min-width: 120em) {
     .ce_heroimage .heroimage-headline-box > * {
         font-size: 4.6rem;
@@ -78,17 +91,41 @@
     text-align: center;
 }
 
-
 .ce_heroimage .heroimage-button-box .btn {
     background-color: transparent !important;
     border: 2px solid #eee !important;
     color: #eee !important;
-    padding-bottom:0;
-    padding-top:0;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .ce_heroimage .heroimage-button-box .btn:hover {
     background-color: #fff !important;
     border: 2px solid #fff !important;
     color: #000 !important;
+}
+
+/** Dark text settings **/
+.ce_heroimage.heroDarkText .heroimage-headline-box > * {
+    color: #222222;
+}
+
+.ce_heroimage.heroDarkText .heroimage-text-box > p {
+    color: #222222;
+}
+
+.ce_heroimage.heroDarkText .heroimage-button-box .btn {
+    background-color: transparent !important;
+    border: 2px solid #222222 !important;
+    color: #222222 !important;
+}
+
+.ce_heroimage.heroDarkText .heroimage-button-box .btn:hover {
+    background-color: #222222 !important;
+    border: 2px solid #222222 !important;
+    color: #fff !important;
+}
+
+.ce_heroimage.heroDarkText .heroimage-background-overlay {
+    background: rgba(255, 255, 255, 0.3);
 }
