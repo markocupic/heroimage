@@ -32,7 +32,7 @@ class ContentHeroimage extends \ContentElement
     public function generate()
     {
 
-        if ($this->buttonJumpTo === '')
+        if ($this->heroImageButtonJumpTo === '')
         {
             //return '';
         }
@@ -91,10 +91,8 @@ class ContentHeroimage extends \ContentElement
             $this->Template->backgroundImage =  "url('" . $this->Template->picture['img']['src'] . "')";
         }
 
-
-
 		$this->Template->text = \StringUtil::encodeEmail($this->text);
-        $this->Template->buttonJumpTo = $this->buttonJumpTo;
+        $this->Template->heroImageButtonJumpTo = $this->heroImageButtonJumpTo;
 
     }
 }

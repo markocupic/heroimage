@@ -1,23 +1,24 @@
-<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if($this->heroImageBackgroundColor): ?> style="background-image:<?= $this->backgroundImage ?>; background-color:#<?= $this->heroImageBackgroundColor ?>"<?php endif; ?>>
-  <div class="heroimage-content-box">
-    <?php if ($this->headline): ?>
+<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->heroImageBackgroundColor): ?> style="background-image:<?= $this->backgroundImage ?>; background-color:#<?= $this->heroImageBackgroundColor ?>"<?php endif; ?>>
+    <div class="heroimage-content-box">
+        <?php if ($this->headline): ?>
         <div class="heroimage-headline-box">
             <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
         </div>
-    <?php endif; ?>
+        <?php endif; ?>
 
-    <div class="heroimage-text-box">
+        <div class="heroimage-text-box">
         <?= $this->text ?>
+        </div>
+        {{br}}{{br}}
+        <?php if ($this->heroImageButtonText): ?>
+        <div class="heroimage-button-box">
+            <a href="<?= $this->heroImageButtonJumpTo ?>" role="button" tabindex="0" aria-pressed="false" class="btn<?php if ($this->heroImageButtonClass): ?> <?= $this->heroImageButtonClass ?><?php endif; ?>">
+                <?= $this->heroImageButtonText ?>
+            </a>
+        </div>
+        <?php endif; ?>
     </div>
-    {{br}}{{br}}
-    <?php if($this->buttonClass): ?>
-      <div class="heroimage-button-box">
-        <a href="<?= $this->buttonJumpTo ?>" role="button" tabindex="0" aria-pressed="false" class="btn<?php if($this->buttonClass): ?> <?= $this->buttonClass ?><?php endif; ?>"><?= $this->buttonText ?></a>
-      </div>
-    <?php endif; ?>
-  </div>
 </div>
-
 
 
 
