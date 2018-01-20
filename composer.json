@@ -3,7 +3,7 @@
     "description":"Contao content element 'heroimage' with background image support.",
     "keywords":["contao", "heroimage", "background image"],
     "type":"contao-module",
-    "license":"LGPL-3.0+",
+    "license":"MIT",
     "authors":[
         {
             "name":"Marko Cupic",
