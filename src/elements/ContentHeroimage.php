@@ -75,11 +75,11 @@ class ContentHeroimage extends \ContentElement
         // Clean the RTE output
         if ($objPage->outputFormat == 'xhtml')
         {
-            $this->text = \StringUtil::toXhtml($this->text);
+            $this->heroImageText = \StringUtil::toXhtml($this->heroImageText);
         }
         else
         {
-            $this->text = \StringUtil::toHtml5($this->text);
+            $this->heroImageText = \StringUtil::toHtml5($this->heroImageText);
         }
 
 		$this->addImageToTemplate($this->Template, $this->arrData, null, null, $this->objFilesModel);
@@ -91,7 +91,7 @@ class ContentHeroimage extends \ContentElement
             $this->Template->backgroundImage =  "url('" . $this->Template->picture['img']['src'] . "')";
         }
 
-		$this->Template->text = \StringUtil::encodeEmail($this->text);
+		$this->Template->heroImageText = \StringUtil::encodeEmail($this->heroImageText);
         $this->Template->heroImageButtonJumpTo = $this->heroImageButtonJumpTo;
 
     }

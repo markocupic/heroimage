@@ -13,7 +13,6 @@
 }
 
 .ce_heroimage .heroimage-background-overlay {
-    background: rgba(0, 0, 0, 0.3);
     width: 100%;
     display: flex;
     align-items: center;
@@ -27,8 +26,7 @@
 
 .ce_heroimage .heroimage-headline-box > * {
     color: #fff;
-    text-align: left;
-    font-weight: 700;
+    font-weight: 200;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 1vw !important;
@@ -106,26 +104,30 @@
 }
 
 /** Dark text settings **/
-.ce_heroimage.heroDarkText .heroimage-headline-box > * {
+.ce_heroimage.heroBrightOverlay .heroimage-headline-box > * {
     color: #222222;
 }
 
-.ce_heroimage.heroDarkText .heroimage-text-box > p {
+.ce_heroimage.heroBrightOverlay .heroimage-text-box > p {
     color: #222222;
 }
 
-.ce_heroimage.heroDarkText .heroimage-button-box .btn {
+.ce_heroimage.heroBrightOverlay .heroimage-button-box .btn {
     background-color: transparent !important;
     border: 2px solid #222222 !important;
     color: #222222 !important;
 }
 
-.ce_heroimage.heroDarkText .heroimage-button-box .btn:hover {
+.ce_heroimage.heroBrightOverlay .heroimage-button-box .btn:hover {
     background-color: #222222 !important;
     border: 2px solid #222222 !important;
     color: #fff !important;
 }
 
-.ce_heroimage.heroDarkText .heroimage-background-overlay {
+.ce_heroimage.heroBrightOverlay .heroimage-background-overlay {
     background: rgba(255, 255, 255, 0.3);
 }
+.ce_heroimage.heroDarkOverlay .heroimage-background-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
