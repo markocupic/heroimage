@@ -11,7 +11,7 @@
  */
 
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['heroimage'] = 'name,type,heroImageHeadline;{hero_image_legend:hide},addHeroImage;{template_legend:hide},customTpl;{text_legend},heroImageText;{hero_image_button_legend},heroImageButtonText,heroImageButtonClass,heroImageButtonJumpTo;{hero_image_background_legend:hide],heroImageBackgroundColor,heroImageOverlayClass;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['heroimage'] = 'name,type,heroImageHeadline;{hero_image_legend:hide},addHeroImage;{template_legend:hide},customTpl;{text_legend},heroImageText;{hero_image_button_legend},heroImageButtonText,heroImageButtonClass,heroImageButtonJumpTo;{hero_image_background_legend:hide],heroImageBackgroundColor;{hero_content_box_legend},heroContentboxPosition,heroContentboxBackgroundStyle;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['addHeroImage'] = 'singleSRC';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'addHeroImage';
 
@@ -87,12 +87,22 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['heroImageBackgroundColor'] = array(
     'sql'       => "varchar(255) NOT NULL default ''",
 );
 
-$GLOBALS['TL_DCA']['tl_content']['fields']['heroImageOverlayClass'] = array(
-    'label'     => &$GLOBALS['TL_LANG']['tl_content']['heroImageOverlayClass'],
+$GLOBALS['TL_DCA']['tl_content']['fields']['heroContentboxPosition'] = array(
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['heroContentboxPosition'],
     'exclude'   => true,
     'search'    => true,
     'inputType' => 'select',
-    'options'   => array('transparentOverlay', 'heroBrightOverlay', 'heroDarkOverlay'),
+    'options'   => array('contentbox-left', 'contentbox-center', 'contentbox-right'),
+    'eval'      => array('tl_class' => 'w50 wizard'),
+    'sql'       => "varchar(255) NOT NULL default ''",
+);
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['heroContentboxBackgroundStyle'] = array(
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['heroContentboxBackgroundStyle'],
+    'exclude'   => true,
+    'search'    => true,
+    'inputType' => 'select',
+    'options'   => array('contentbox-white', 'contentbox-red'),
     'eval'      => array('tl_class' => 'w50 wizard'),
     'sql'       => "varchar(255) NOT NULL default ''",
 );

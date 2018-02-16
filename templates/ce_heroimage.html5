@@ -1,4 +1,4 @@
-<div class="<?= $this->class ?> block <?= $this->heroImageOverlayClass ?>"<?= $this->cssID ?>>
+<div class="<?= $this->class ?> block <?= $this->heroContentboxPosition ?> <?= $this->heroContentboxBackgroundStyle ?>"<?= $this->cssID ?>>
   <div class="heroimage-wrapper"<?php if ($this->backgroundImage != ''): ?> style="background-image:<?= $this->backgroundImage ?>; background-color:#<?= $this->heroImageBackgroundColor ?>"<?php endif; ?>>
     <div class="heroimage-background-overlay">
       <div style="z-index: 10" class="heroimage-content-box">
@@ -11,7 +11,6 @@
             <div class="lead heroimage-text-box">
                 <?= $this->heroImageText ?>
             </div>
-            <br><br>
           <?php endif; ?>
 
           <?php if ($this->heroImageButtonText): ?>

@@ -9,6 +9,7 @@
 $GLOBALS['TL_LANG']['tl_content']['hero_image_button_legend'] = 'Button-Einstellungen';
 $GLOBALS['TL_LANG']['tl_content']['hero_image_legend'] = 'Hero-Image-Einstellungen';
 $GLOBALS['TL_LANG']['tl_content']['hero_image_background_legend'] = 'Hintergrund-Einstellungen';
+$GLOBALS['TL_LANG']['tl_content']['hero_content_box_legend'] = 'Content-Box-Einstellungen';
 
 // Fields
 $GLOBALS['TL_LANG']['tl_content']['heroImageHeadline'] = array('&Uuml;berschrift', 'F&uuml;gen Sie eine &Uuml;berschrift hinzu.');
@@ -18,5 +19,6 @@ $GLOBALS['TL_LANG']['tl_content']['heroImageButtonClass'] = array('Button CSS-Kl
 $GLOBALS['TL_LANG']['tl_content']['heroImageButtonText'] = array('Button Beschriftung', '');
 $GLOBALS['TL_LANG']['tl_content']['heroImageButtonJumpTo'] = array('Button Weiterleitung', 'Geben Sie eine interne Seite an.');
 $GLOBALS['TL_LANG']['tl_content']['heroImageBackgroundColor'] = array('Hintergrundfarbe', 'Geben Sie eine Hintergrundfarbe ein.');
-$GLOBALS['TL_LANG']['tl_content']['heroImageOverlayClass'] = array('Overlay Einstellungen', 'W&auml;hlen Sie eine Overlay-Klasse aus.');
+$GLOBALS['TL_LANG']['tl_content']['heroContentboxPosition'] = array('Content-Box-Ausrichtung', 'W&auml;hlen Sie die Ausrichtung der Content-Box aus.');
+$GLOBALS['TL_LANG']['tl_content']['heroContentboxBackgroundStyle'] = array('Content-Box-Hintergund-Style', 'W&auml;hlen Sie den Hintergrund der Content-Box aus.');
 
