@@ -1,6 +1,6 @@
-<div class="<?= $this->class ?> block <?= $this->heroContentboxPosition ?> <?= $this->heroContentboxBackgroundStyle ?>"<?= $this->cssID ?>>
+<div class="<?= $this->class ?> block <?= $this->heroContentboxTextAlign ?>"<?= $this->cssID ?>>
   <div class="heroimage-wrapper"<?php if ($this->backgroundImage != ''): ?> style="background-image:<?= $this->backgroundImage ?>; background-color:#<?= $this->heroImageBackgroundColor ?>"<?php endif; ?>>
-    <div class="heroimage-background-overlay">
+    <div class="heroimage-background-overlay" data-opacity="<?= $this->heroContentboxOpacity ?>">
       <div style="z-index: 10" class="heroimage-content-box">
           <?php if ($this->heroImageHeadline): ?>
             <div class="heroimage-headline-box">

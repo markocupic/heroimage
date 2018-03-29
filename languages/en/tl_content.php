@@ -19,6 +19,5 @@ $GLOBALS['TL_LANG']['tl_content']['heroImageButtonClass'] = array('Button CSS-Kl
 $GLOBALS['TL_LANG']['tl_content']['heroImageButtonText'] = array('Button Beschriftung', '');
 $GLOBALS['TL_LANG']['tl_content']['heroImageButtonJumpTo'] = array('Button Weiterleitung', 'Geben Sie eine interne Seite an.');
 $GLOBALS['TL_LANG']['tl_content']['heroImageBackgroundColor'] = array('Hintergrundfarbe', 'Geben Sie eine Hintergrundfarbe ein.');
-$GLOBALS['TL_LANG']['tl_content']['heroContentboxPosition'] = array('Content-Box-Ausrichtung', 'W&auml;hlen Sie die Ausrichtung der Content-Box aus.');
-$GLOBALS['TL_LANG']['tl_content']['heroContentboxBackgroundStyle'] = array('Content-Box-Hintergund-Style', 'W&auml;hlen Sie den Hintergrund der Content-Box aus.');
-
+$GLOBALS['TL_LANG']['tl_content']['heroContentboxTextAlign'] = array('Content-Box-Textausrichtung', 'W&auml;hlen Sie die Textausrichtung der Content-Box aus.');
+$GLOBALS['TL_LANG']['tl_content']['heroContentboxOpacity'] = array('Content-Box-Hintergrund-Opazit&auml;t', 'W&auml;hlen Sie die Hintergrund-Opazit&auml;t der Content-Box aus.');

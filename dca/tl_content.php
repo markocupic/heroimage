@@ -11,7 +11,7 @@
  */
 
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['heroimage'] = 'name,type,heroImageHeadline;{hero_image_legend:hide},addHeroImage;{template_legend:hide},customTpl;{text_legend},heroImageText;{hero_image_button_legend},heroImageButtonText,heroImageButtonClass,heroImageButtonJumpTo;{hero_image_background_legend:hide],heroImageBackgroundColor;{hero_content_box_legend},heroContentboxPosition,heroContentboxBackgroundStyle;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['heroimage'] = 'name,type,heroImageHeadline;{hero_image_legend:hide},addHeroImage;{template_legend:hide},customTpl;{text_legend},heroImageText;{hero_image_button_legend},heroImageButtonText,heroImageButtonClass,heroImageButtonJumpTo;{hero_image_background_legend:hide],heroImageBackgroundColor;{hero_content_box_legend},heroContentboxTextAlign,heroContentboxOpacity;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['addHeroImage'] = 'singleSRC';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'addHeroImage';
 
@@ -81,28 +81,25 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['heroImageButtonJumpTo'] = array(
 $GLOBALS['TL_DCA']['tl_content']['fields']['heroImageBackgroundColor'] = array(
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['heroImageBackgroundColor'],
     'exclude'   => true,
-    'search'    => true,
     'inputType' => 'text',
     'eval'      => array('maxlength' => 6, 'colorpicker' => true, 'isHexColor' => true, 'decodeEntities' => true, 'tl_class' => 'w50 wizard'),
     'sql'       => "varchar(255) NOT NULL default ''",
 );
 
-$GLOBALS['TL_DCA']['tl_content']['fields']['heroContentboxPosition'] = array(
-    'label'     => &$GLOBALS['TL_LANG']['tl_content']['heroContentboxPosition'],
+$GLOBALS['TL_DCA']['tl_content']['fields']['heroContentboxTextAlign'] = array(
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['heroContentboxTextAlign'],
     'exclude'   => true,
-    'search'    => true,
     'inputType' => 'select',
-    'options'   => array('contentbox-left', 'contentbox-center', 'contentbox-right'),
+    'options'   => array('align-center','align-left', 'align-right'),
     'eval'      => array('tl_class' => 'w50 wizard'),
     'sql'       => "varchar(255) NOT NULL default ''",
 );
 
-$GLOBALS['TL_DCA']['tl_content']['fields']['heroContentboxBackgroundStyle'] = array(
-    'label'     => &$GLOBALS['TL_LANG']['tl_content']['heroContentboxBackgroundStyle'],
+$GLOBALS['TL_DCA']['tl_content']['fields']['heroContentboxOpacity'] = array(
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['heroContentboxOpacity'],
     'exclude'   => true,
-    'search'    => true,
     'inputType' => 'select',
-    'options'   => array('contentbox-white', 'contentbox-red'),
+    'options'   => array('0','0.1','0.2','0.3','0.4','0.5','0.6','0.7','0.8','0.9','1.0'),
     'eval'      => array('tl_class' => 'w50 wizard'),
     'sql'       => "varchar(255) NOT NULL default ''",
 );
