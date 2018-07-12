@@ -12,7 +12,7 @@
 
 
 $GLOBALS['TL_DCA']['tl_content']['palettes']['heroimage'] = 'name,type,heroImageHeadline;{hero_image_legend:hide},addHeroImage;{template_legend:hide},customTpl;{text_legend},heroImageText;{hero_image_button_legend},heroImageButtonText,heroImageButtonClass,heroImageButtonJumpTo;{hero_image_background_legend:hide],heroImageBackgroundColor;{hero_content_box_legend},heroContentboxTextAlign,heroContentboxOpacity;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';
-$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addHeroImage'] = 'singleSRC';
+$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addHeroImage'] = 'singleSRC,size';
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'addHeroImage';
 
 
