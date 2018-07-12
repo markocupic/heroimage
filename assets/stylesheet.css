@@ -97,7 +97,7 @@
 
 .ce_heroimage .heroimage-content-box {
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 1rem 4rem;
     background-color: transparent;
     z-index: 10;
 }
@@ -149,7 +149,7 @@
     }
 
     .ce_heroimage .heroimage-content-box {
-        padding: 1rem 3rem;
+        padding: 1rem 5rem;
     }
 
     .ce_heroimage .heroimage-button-box {
@@ -160,7 +160,7 @@
 
 @media (min-width: 90em) {
     .ce_heroimage .heroimage-content-box {
-        padding: 1rem 5rem;
+        padding: 1rem 6rem;
     }
 
     .ce_heroimage .heroimage-headline-box > * {
