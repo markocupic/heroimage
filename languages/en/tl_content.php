@@ -1,10 +1,16 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: Marko
- * Date: 09.05.2015
- * Time: 12:40
+ * Contao Open Source CMS
+ *
+ * Copyright (C) 2005-2012 Leo Feyer
+ *
+ * @package Hero Image
+ * @link    http://www.contao.org
+ * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
+
+
 // Legends
 $GLOBALS['TL_LANG']['tl_content']['hero_image_button_legend'] = 'Button-Einstellungen';
 $GLOBALS['TL_LANG']['tl_content']['hero_image_legend'] = 'Hero-Image-Einstellungen';

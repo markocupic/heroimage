@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2005-2012 Leo Feyer
  *
- * @package Gallery Creator
+ * @package Hero Image
  * @link    http://www.contao.org
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
